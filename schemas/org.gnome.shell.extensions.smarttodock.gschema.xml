@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.smarttodock" path="/org/gnome/shell/extensions/smarttodock/">
+    <key name="max-pinned-apps" type="i">
+      <default>20</default>
+      <summary>Maximum pinned apps</summary>
+      <description>Maximum number of most-used apps pinned to dock.</description>
+    </key>
+    <key name="update-interval-hours" type="i">
+      <default>1</default>
+      <summary>Update interval in hours</summary>
+      <description>Interval in hours for automatic update of pinned apps.</description>
+    </key>
+  </schema>
+</schemalist>
+

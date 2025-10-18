@@ -1,0 +1,16 @@
+{
+  "name": "Smart To Dock",
+  "description": "Pins your most used apps automatically every hour",
+  "uuid": "smarttodock@tayefi.ilia.protonmail.com",
+  "settings-schema": "org.gnome.shell.extensions.smarttodock",
+  "module": true,
+  "prefs": "prefs.js",
+  "version": 1,
+  "shell-version": [
+    "45",
+    "46",
+    "47",
+    "48"
+  ]
+}
+

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <object class="GtkBox" id="prefs-container">
+    <property name="orientation">vertical</property>
+    <property name="spacing">24</property>
+    <property name="margin-top">24</property>
+    <property name="margin-bottom">24</property>
+    <property name="margin-start">32</property>
+    <property name="margin-end">32</property>
+    <child>
+      <object class="GtkSeparator"/>
+    </child>
+    <child>
+      <object class="GtkBox">
+        <property name="orientation">horizontal</property>
+        <property name="spacing">24</property>
+        <child>
+          <object class="GtkLabel">
+            <property name="label" translatable="yes">Maximum pinned apps</property>
+            <property name="halign">end</property>
+            <property name="xalign">1.0</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkSpinButton" id="max-apps-spin"/>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkBox">
+        <property name="orientation">horizontal</property>
+        <property name="spacing">24</property>
+        <child>
+          <object class="GtkLabel">
+            <property name="label" translatable="yes">Update interval (hours)</property>
+            <property name="halign">end</property>
+            <property name="xalign">1.0</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkSpinButton" id="update-interval-spin"/>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkSeparator"/>
+    </child>
+    <child>
+      <object class="GtkBox" id="links-box">
+        <property name="orientation">horizontal</property>
+        <property name="spacing">8</property>
+        <property name="halign">center</property>
+        <child>
+          <object class="GtkButton" id="gnome-link">
+            <property name="label" translatable="yes">GNOME Extensions Page</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkButton" id="github-link">
+            <property name="label" translatable="yes">GitHub</property>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
+
