@@ -44,9 +44,9 @@ export default class SmartToDock extends Extension {
       let app = mostUsed[i];
       if (app) {
         let appInfo = app.get_app_info();
-        if (appInfo && appInfo.should_show()) {
+        if (appInfo && appInfo.should_show() && appInfo.get_id() != 'firefox.desktop') {
           apps.push({
-            name: appInfo.get_display_name(),
+            name: appInfo.get_display_name().replace('Mozilla', '').replace('Google', '').trim(),
             id: appInfo.get_id()
           });
         }
