@@ -8,7 +8,7 @@ export default class SmartToDock extends Extension {
   _timeoutId = 0;
 
   enable() {
-    this.settings = this.getSettings({ schema: 'org.gnome.shell.extensions.smarttodock' });
+    this.settings = this.getSettings('org.gnome.shell.extensions.smarttodock');
 
     this.settingsChangedId = this.settings.connect('changed', () => {
       this.restartTimerAndUpdate();
