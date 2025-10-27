@@ -4,8 +4,8 @@
   "uuid": "smarttodock@tayefi.ilia.protonmail.com",
   "settings-schema": "org.gnome.shell.extensions.smarttodock",
   "module": true,
-  "prefs": "prefs.js",
   "version": 1,
+  "url": "https://github.com/Tejaromalius/SmartToDock",
   "shell-version": [
     "45",
     "46",
@@ -13,4 +13,3 @@
     "48"
   ]
 }
-

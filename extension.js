@@ -8,7 +8,7 @@ export default class SmartToDock extends Extension {
   _timeoutId = 0;
 
   enable() {
-    this.settings = new Gio.Settings({ schema: 'org.gnome.shell.extensions.smarttodock' });
+    this.settings = this.getSettings({ schema: 'org.gnome.shell.extensions.smarttodock' });
 
     this.settingsChangedId = this.settings.connect('changed', () => {
       this.restartTimerAndUpdate();
@@ -59,7 +59,7 @@ export default class SmartToDock extends Extension {
     if (favorites.length > 0) {
       let settings = new Gio.Settings({ schema: "org.gnome.shell" });
       settings.set_strv("favorite-apps", favorites);
-      log('Pinned apps updated: ' + favorites.join(', '));
+      console.log('Pinned apps updated: ' + favorites.join(', '));
     }
   }
 
@@ -72,6 +72,8 @@ export default class SmartToDock extends Extension {
       this.settings.disconnect(this.settingsChangedId);
       this.settingsChangedId = null;
     }
+
+    this._settings = null;
   }
 }
 
