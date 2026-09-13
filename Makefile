@@ -11,6 +11,6 @@ uninstall:
 	gnome-extensions uninstall $(EXT_NAME) || true
 
 install: uninstall zip
-	gnome-extensions install $(ZIP_FILE)
+	gnome-extensions install $(ZIP_FILE) --force
 	rm $(ZIP_FILE)
 
